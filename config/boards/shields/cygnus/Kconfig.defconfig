@@ -1,3 +1,4 @@
+
 if SHIELD_CYGNUS_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -8,17 +9,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_CYGNUS_DONGLE
-
-config ZMK_KEYBOARD_NAME
-    default "Cygnus"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif
-
-if SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT || SHIELD_CYGNUS_DONGLE
+if SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT
 
 config ZMK_SPLIT
     default y
@@ -51,3 +42,4 @@ endchoice
 endif # LVGL
 
 endif
+
