@@ -20,7 +20,7 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
 
-            bindings = <&mo 1>, <&kp BSPC>;
+            bindings = <&mo 1 &kp BSPC>;
         };
 
     };
